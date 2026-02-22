@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+  "node": "24.x"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/muhahsan0626/Ahsan-Portfolio.git"
