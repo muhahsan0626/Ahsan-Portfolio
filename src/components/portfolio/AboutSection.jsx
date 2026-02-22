@@ -32,7 +32,7 @@ export default function AboutSection() {
               <div className="relative">
                 <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-2xl border-2 border-primary/30 shadow-lg shadow-primary/10 overflow-hidden bg-card backdrop-blur-sm">
                   <img
-                    src="/src/assets/profile_pic.jpeg"
+                    src="/profile_pic.jpeg"
                     alt="Muhammad Ahsan - Full Stack Software Engineer"
                     className="w-full h-full object-cover"
                     onError={(e) => {
