@@ -11,7 +11,7 @@ const mockProjects = [
     tech_stack: ["React", "Node.js", "MongoDB", "Stripe"],
     github_url: "https://github.com",
     live_url: "https://example.com",
-    image: "/src/assets/profile_pic.jpeg", // Add your project image here
+    image: "/test", // Add your project image here
     order: 1
   },
   {
