@@ -4,27 +4,21 @@ import { Trophy, Code2, BookOpen, Mic, ExternalLink } from "lucide-react";
 const achievements = [
   {
     icon: Trophy,
-    title: "Hackathon Winner",
-    description: "1st place at TechHacks 2023 — built an AI-powered accessibility tool in 48 hours",
-    link: "https://github.com/muhahsan0626" // Add your achievement link here (e.g., certificate, article, etc.)
+    title: "Rising Star",
+    // description: "1st place at TechHacks 2023 — built an AI-powered accessibility tool in 48 hours",
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7212564303416102912/?utm_source=share&utm_medium=member_desktop"
   },
   {
-    icon: Code2,
-    title: "Open Source Contributor",
-    description: "Active contributor to React ecosystem libraries with 200+ GitHub stars on personal projects",
-    link: "https://github.com/muhahsan0626" // Replace with your GitHub profile
+    icon: Trophy,
+    title: "Certificate of Appreciation",
+    // description: "For Ensuring the On-time completion of key deliverables for Auto Nation.",
+    link: "https://www.linkedin.com/in/muhahsan0626/details/honors/"
   },
   {
-    icon: BookOpen,
-    title: "Technical Writer",
-    description: "Published articles on system design and best practices reaching 10K+ monthly readers",
-    link: "" // Add link to your blog or articles
-  },
-  {
-    icon: Mic,
-    title: "Conference Speaker",
-    description: "Presented on microservices architecture at local developer meetups and tech events",
-    link: "" // Add link to presentation slides or video
+    icon: Trophy,
+    title: "Employee of the Month",
+    // description: "Presented on microservices architecture at local developer meetups and tech events",
+    link: "https://www.linkedin.com/in/muhahsan0626/details/honors/"
   }
 ];
 
@@ -47,13 +41,13 @@ export default function AchievementsSection() {
                   <Icon className="w-5 sm:w-6 h-5 sm:h-6 text-primary" />
                 </div>
                 <div className="flex-1">
-                  <div className="flex items-start justify-between gap-2">
+                  <div className="flex justify-between gap-2">
                     <h3 className="font-semibold text-foreground text-sm sm:text-base">{item.title}</h3>
                     {item.link && (
                       <ExternalLink className="w-3.5 sm:w-4 h-3.5 sm:h-4 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0 mt-0.5" />
                     )}
                   </div>
-                  <p className="text-muted-foreground text-xs sm:text-sm mt-2 leading-relaxed">{item.description}</p>
+                  {/* <p className="text-muted-foreground text-xs sm:text-sm mt-2 leading-relaxed">{item.description}</p> */}
                 </div>
               </>
             );

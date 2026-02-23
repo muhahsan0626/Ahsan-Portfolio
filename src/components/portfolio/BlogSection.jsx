@@ -7,18 +7,18 @@ import { format } from "date-fns";
 
 // Mock blog data - replace with your actual blog posts
 const mockPosts = [
-  {
-    id: 1,
-    title: "Building Scalable React Applications",
-    summary: "Learn best practices for structuring large-scale React applications with maintainability in mind.",
-    published_date: "2026-02-10",
-  },
-  {
-    id: 2,
-    title: "Modern API Design Patterns",
-    summary: "Explore RESTful and GraphQL API design patterns for building robust backend services.",
-    published_date: "2026-02-05",
-  }
+  // {
+  //   id: 1,
+  //   title: "Building Scalable React Applications",
+  //   summary: "Learn best practices for structuring large-scale React applications with maintainability in mind.",
+  //   published_date: "2026-02-10",
+  // },
+  // {
+  //   id: 2,
+  //   title: "Modern API Design Patterns",
+  //   summary: "Explore RESTful and GraphQL API design patterns for building robust backend services.",
+  //   published_date: "2026-02-05",
+  // }
 ];
 
 export default function BlogSection() {

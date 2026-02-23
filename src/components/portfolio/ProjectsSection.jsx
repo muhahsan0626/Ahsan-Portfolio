@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Skeleton } from "@/components/ui/skeleton";
 import ProjectCard from './ProjectCard';
+import ProjectDetailModal from './ProjectDetailModal';
 
 // Mock project data - replace with your actual projects
 const mockProjects = [
@@ -11,7 +12,8 @@ const mockProjects = [
     tech_stack: ["React", "Node.js", "MongoDB", "Stripe"],
     github_url: "https://github.com",
     live_url: "https://example.com",
-    image: "/test", // Add your project image here
+    image: "/test",
+    long_description: "This comprehensive e-commerce platform provides a complete solution for online retail businesses. Features include secure payment processing through Stripe, real-time inventory tracking, customer management, order processing, and detailed analytics dashboards. Built with modern technologies ensuring scalability and performance.",
     order: 1
   },
   {
@@ -21,7 +23,8 @@ const mockProjects = [
     tech_stack: ["React", "Firebase", "Tailwind CSS"],
     github_url: "https://github.com",
     live_url: "https://example.com",
-    image: "/project-2.jpg", // Add your project image here
+    image: "/project-2.jpg",
+    long_description: "A modern task management application designed for teams. Features real-time collaboration, task assignments, progress tracking, deadline management, and team productivity insights. Built with Firebase for real-time synchronization and Tailwind CSS for a beautiful, responsive interface.",
     order: 2
   },
   {
@@ -31,7 +34,8 @@ const mockProjects = [
     tech_stack: ["React", "OpenWeather API", "Chart.js"],
     github_url: "https://github.com",
     live_url: "https://example.com",
-    image: "/project-3.jpg", // Add your project image here
+    image: "/project-3.jpg",
+    long_description: "An intuitive weather dashboard that provides real-time weather information, 7-day forecasts, interactive weather maps, and customizable location-based alerts. Integrates with OpenWeather API and uses Chart.js for beautiful data visualizations.",
     order: 3
   },
 ];
@@ -39,6 +43,7 @@ const mockProjects = [
 export default function ProjectsSection() {
   const isLoading = false;
   const projects = mockProjects;
+  const [selectedProject, setSelectedProject] = useState(null);
 
   return (
     <section id="projects" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 relative">
@@ -71,11 +76,19 @@ export default function ProjectsSection() {
         ) : (
           <div className="mt-8 sm:mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
             {projects.map(project => (
-              <ProjectCard key={project.id} project={project} />
+              <ProjectCard key={project.id} project={project} onViewDetails={setSelectedProject} />
             ))}
           </div>
         )}
       </div>
+
+      {/* Project Detail Modal */}
+      {selectedProject && (
+        <ProjectDetailModal
+          project={selectedProject}
+          onClose={() => setSelectedProject(null)}
+        />
+      )}
     </section>
   );
 }

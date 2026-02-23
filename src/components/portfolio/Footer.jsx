@@ -30,7 +30,7 @@ export default function Footer({ onNavigate }) {
           {/* Social Links */}
           <div className="flex gap-3">
             <a
-              href="https://github.com"
+              href="http://github.com/muhahsan0626"
               target="_blank"
               rel="noopener noreferrer"
               className="w-9 sm:w-10 h-9 sm:h-10 flex items-center justify-center rounded-lg border border-primary/30 text-muted-foreground hover:text-primary hover:border-primary hover:bg-primary/10 transition-all"
@@ -38,7 +38,7 @@ export default function Footer({ onNavigate }) {
               <Github className="w-3.5 sm:w-4 h-3.5 sm:h-4" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="http://linkedin.com/in/muhahsan0626"
               target="_blank"
               rel="noopener noreferrer"
               className="w-9 sm:w-10 h-9 sm:h-10 flex items-center justify-center rounded-lg border border-primary/30 text-muted-foreground hover:text-primary hover:border-primary hover:bg-primary/10 transition-all"
@@ -46,7 +46,7 @@ export default function Footer({ onNavigate }) {
               <Linkedin className="w-3.5 sm:w-4 h-3.5 sm:h-4" />
             </a>
             <a
-              href="mailto:hello@example.com"
+              href="mailto:muhahsan0626@gmail.com"
               className="w-9 sm:w-10 h-9 sm:h-10 flex items-center justify-center rounded-lg border border-primary/30 text-muted-foreground hover:text-primary hover:border-primary hover:bg-primary/10 transition-all"
             >
               <Mail className="w-3.5 sm:w-4 h-3.5 sm:h-4" />
@@ -54,13 +54,13 @@ export default function Footer({ onNavigate }) {
           </div>
         </div>
 
-        <div className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-primary/20">
+        {/* <div className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-primary/20">
           <p className="text-center text-xs sm:text-sm text-muted-foreground font-mono">
             <span className="text-primary">{'>'}</span> <span className="hidden sm:inline">Built with React + Tailwind CSS</span>
             <span className="hidden sm:inline mx-3 text-primary/50">|</span>
             © {new Date().getFullYear()} <span className="text-primary">Muhammad Ahsan</span>. All rights reserved.
           </p>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

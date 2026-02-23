@@ -4,7 +4,6 @@ import { FileText, Menu, X, Terminal } from "lucide-react";
 
 const navItems = [
   { label: "Home", id: "home" },
-  { label: "About", id: "about" },
   { label: "Projects", id: "projects" },
   { label: "Experience", id: "experience" },
   { label: "Certifications", id: "certifications" },
@@ -65,7 +64,9 @@ export default function Navbar({ onNavigate, activeSection }) {
             className="ml-3 bg-primary hover:bg-primary/90 text-background font-semibold rounded-lg px-4 h-9 border border-primary/50 glow-cyan-sm transition-all"
           >
             <FileText className="w-3.5 h-3.5 mr-1.5" />
+            <a href="/Muhammad_Ahsan-Resume.pdf" download>
             Resume
+            </a>
           </Button>
         </div>
 
@@ -102,7 +103,9 @@ export default function Navbar({ onNavigate, activeSection }) {
                 className="w-full bg-primary hover:bg-primary/90 text-background font-semibold rounded-lg h-10 sm:h-11 text-sm"
               >
                 <FileText className="w-3.5 sm:w-4 h-3.5 sm:h-4 mr-2" />
+                 <a href="/Muhammad_Ahsan-Resume.pdf" download>
                 Download Resume
+                 </a>
               </Button>
             </div>
           </div>

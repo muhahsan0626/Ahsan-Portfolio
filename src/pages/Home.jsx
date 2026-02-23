@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import Navbar from '@/components/portfolio/Navbar';
 import HeroSection from '@/components/portfolio/HeroSection';
-import AboutSection from '@/components/portfolio/AboutSection';
 import ProjectsSection from '@/components/portfolio/ProjectsSection';
 import ExperienceSection from '@/components/portfolio/ExperienceSection';
 import CertificationsSection from '@/components/portfolio/CertificationsSection';
@@ -23,7 +22,7 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    const sectionIds = ['home', 'about', 'projects', 'experience', 'certifications', 'achievements', 'blog', 'contact'];
+    const sectionIds = ['home', 'projects', 'experience', 'certifications', 'achievements', 'blog', 'contact'];
 
     const handleScroll = () => {
       const scrollPosition = window.scrollY + window.innerHeight / 3; // navbar + 1/3 viewport
@@ -71,7 +70,6 @@ export default function Home() {
       <div className="relative z-10">
         <Navbar onNavigate={scrollToSection} activeSection={activeSection} />
         <HeroSection onNavigate={scrollToSection} />
-        <AboutSection />
         <ProjectsSection />
         <ExperienceSection />
         <CertificationsSection />

@@ -1,10 +1,8 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github, Code2 } from "lucide-react";
-import { Link } from "react-router-dom";
-import { createPageUrl } from "@/utils";
+import { ExternalLink, Github, Code2, Eye } from "lucide-react";
 
-export default function ProjectCard({ project }) {
+export default function ProjectCard({ project, onViewDetails }) {
   return (
     <div className="group relative bg-card border border-primary/20 rounded-xl p-4 sm:p-5 md:p-6 hover:border-primary hover:glow-cyan-sm transition-all duration-300 overflow-hidden">
       {/* Background Image with Blur Effect */}
@@ -59,16 +57,15 @@ export default function ProjectCard({ project }) {
         )}
 
         <div className="mt-5 sm:mt-6">
-          <Link to={createPageUrl("ProjectDetail") + `?id=${project.id}`}>
-            <Button
-              variant="outline"
-              size="sm"
-              className="w-full rounded-lg text-xs sm:text-sm h-8 sm:h-9 border-primary/50 hover:bg-primary/10 hover:border-primary font-medium"
-            >
-              View Details
-              <ExternalLink className="w-3 sm:w-3.5 h-3 sm:h-3.5 ml-2" />
-            </Button>
-          </Link>
+          <Button
+            variant="outline"
+            size="sm"
+            className="w-full rounded-lg text-xs sm:text-sm h-8 sm:h-9 border-primary/50 hover:bg-primary/10 hover:border-primary font-medium"
+            onClick={() => onViewDetails(project)}
+          >
+            View Details
+            <Eye className="w-3 sm:w-3.5 h-3 sm:h-3.5 ml-2" />
+          </Button>
         </div>
       </div>
     </div>

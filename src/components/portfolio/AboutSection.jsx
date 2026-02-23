@@ -33,7 +33,7 @@ export default function AboutSection() {
                 <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-2xl border-2 border-primary/30 shadow-lg shadow-primary/10 overflow-hidden bg-card backdrop-blur-sm">
                   <img
                     src="/profile_pic.jpeg"
-                    alt="Muhammad Ahsan - Full Stack Software Engineer"
+                    alt="Muhammad Ahsan - Software Engineer"
                     className="w-full h-full object-cover"
                     onError={(e) => {
                       const target = e.currentTarget;
@@ -53,7 +53,7 @@ export default function AboutSection() {
             {/* About Text */}
             <div className="md:col-span-2">
               <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">
-                I'm <span className="text-primary font-semibold">Muhammad Ahsan</span>, a Full Stack Software Engineer with over <span className="text-primary font-semibold">3 years</span> of professional experience at
+                I'm <span className="text-primary font-semibold">Muhammad Ahsan</span>, a Software Engineer with over <span className="text-primary font-semibold">3 years</span> of professional experience at
                 <span className="text-primary font-semibold"> Contact Software GmbH</span> and
                 <span className="text-primary font-semibold"> Netsol Technologies</span>.
                 As a proud <span className="text-primary font-semibold">Netsolian</span> and

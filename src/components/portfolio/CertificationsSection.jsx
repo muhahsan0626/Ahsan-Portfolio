@@ -3,22 +3,22 @@ import { Award, ExternalLink } from "lucide-react";
 
 const certifications = [
   {
-    title: "AWS Certified Solutions Architect",
-    org: "Amazon Web Services",
+    title: "Mastering Full Stack Development: From Frontend to Backend",
+    org: "Udemy",
     year: "2024",
-    link: "https://aws.amazon.com/certification/" // Replace with your actual certification link
+    link: "https://www.udemy.com/certificate/UC-7ef8a5a3-f306-4d44-818b-082518ce7f8f/"
   },
   {
-    title: "Professional Scrum Master I",
-    org: "Scrum.org",
+    title: "Become a Data Science Expert with Python Django Tutorial",
+    org: "Skill Up",
     year: "2023",
-    link: "https://www.scrum.org/" // Replace with your actual certification link
+    link: "https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiIzMTMwIiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvdGh1bWJfNDQ5MzMwMl8xNjkzODYwNTM2LnBuZyIsInVzZXJuYW1lIjoiTXVoYW1tYWQgQWhzYW4ifQ%3D%3D&utm_source=shared-certificate&utm_medium=lms&utm_campaign=shared-certificate-promotion&refe"
   },
   {
-    title: "Meta Front-End Developer Certificate",
-    org: "Meta / Coursera",
-    year: "2022",
-    link: "https://www.coursera.org/" // Replace with your actual certification link
+    title: "JavaScript Essentials",
+    org: "Cisco",
+    year: "2023",
+    link: "https://www.credly.com/badges/92ca0b37-9a03-4d50-9ef5-6b0ab7edd279/linked_in_profile"
   }
 ];
 
