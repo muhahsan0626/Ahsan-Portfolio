@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, Github, Linkedin, Send, CheckCircle2, AlertCircle } from "lucide-react";
+import { Mail, Github, Linkedin, Send, CheckCircle2, AlertCircle, Youtube } from "lucide-react";
 import { toast } from "sonner";
 import emailjs from '@emailjs/browser';
 
@@ -62,7 +62,7 @@ export default function ContactSection() {
     <section id="contact" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 relative">
       <div className="max-w-5xl mx-auto">
         <div className="flex items-center gap-2 sm:gap-3 mb-2">
-          <span className="text-primary font-mono text-base sm:text-lg">07.</span>
+          <span className="text-primary font-mono text-base sm:text-lg">04.</span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground tracking-tight">Get in Touch</h2>
           <div className="hidden sm:block flex-1 h-px bg-primary/30 ml-4" />
         </div>
@@ -82,29 +82,38 @@ export default function ContactSection() {
                 <div className="w-11 sm:w-12 h-11 sm:h-12 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center group-hover:bg-primary/20 transition-colors flex-shrink-0">
                   <Mail className="w-4 sm:w-5 h-4 sm:h-5 text-primary" />
                 </div>
-                <span className="text-xs sm:text-sm font-medium truncate">Email</span>
+                <span className="text-xs sm:text-sm font-medium truncate">Email<br/>muhahsan0626@gmail.com</span>
               </a>
               <a
                 href="http://linkedin.com/in/muhahsan0626"
                 target="_blank"
-                rel="noopener noreferrer"
                 className="flex items-center gap-3 sm:gap-4 text-muted-foreground hover:text-primary transition-colors group"
               >
                 <div className="w-11 sm:w-12 h-11 sm:h-12 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center group-hover:bg-primary/20 transition-colors flex-shrink-0">
                   <Linkedin className="w-4 sm:w-5 h-4 sm:h-5 text-primary" />
                 </div>
-                <span className="text-xs sm:text-sm font-medium">LinkedIn</span>
+                <span className="text-xs sm:text-sm font-medium">LinkedIn<br/>http://linkedin.com/in/muhahsan0626</span>
               </a>
               <a
                 href="http://github.com/muhahsan0626"
                 target="_blank"
-                rel="noopener noreferrer"
                 className="flex items-center gap-3 sm:gap-4 text-muted-foreground hover:text-primary transition-colors group"
               >
                 <div className="w-11 sm:w-12 h-11 sm:h-12 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center group-hover:bg-primary/20 transition-colors flex-shrink-0">
                   <Github className="w-4 sm:w-5 h-4 sm:h-5 text-primary" />
                 </div>
-                <span className="text-xs sm:text-sm font-medium">GitHub</span>
+                <span className="text-xs sm:text-sm font-medium">GitHub<br/>http://github.com/muhahsan0626</span>
+
+              </a>
+               <a
+                href="https://www.youtube.com/@ProgrammingWithAhsan"
+                target="_blank"
+                className="flex items-center gap-3 sm:gap-4 text-muted-foreground hover:text-primary transition-colors group"
+              >
+                <div className="w-11 sm:w-12 h-11 sm:h-12 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center group-hover:bg-primary/20 transition-colors flex-shrink-0">
+                  <Youtube className="w-4 sm:w-5 h-4 sm:h-5 text-primary" />
+                </div>
+                <span className="text-xs sm:text-sm font-medium">Youtube</span>
               </a>
             </div>
           </div>
@@ -130,7 +139,7 @@ export default function ContactSection() {
                 value={form.email}
                 onChange={e => setForm({ ...form, email: e.target.value })}
                 required
-                placeholder="Your Email"
+                placeholder="Your email"
                 className="mt-2 bg-card border-primary/30 focus:border-primary text-foreground placeholder:text-muted-foreground/50 h-10 sm:h-11 text-sm"
               />
             </div>
@@ -142,7 +151,7 @@ export default function ContactSection() {
                 onChange={e => setForm({ ...form, message: e.target.value })}
                 required
                 rows={4}
-                placeholder="What would you like to discuss?"
+                placeholder="Your message..."
                 className="mt-2 bg-card border-primary/30 focus:border-primary text-foreground placeholder:text-muted-foreground/50 text-sm"
               />
             </div>

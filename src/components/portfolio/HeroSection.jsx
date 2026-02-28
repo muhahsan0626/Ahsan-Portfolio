@@ -6,6 +6,7 @@ import {
   Mail,
   FileText,
   Code2,
+  Youtube
 } from "lucide-react";
 
 const skillIcons = {
@@ -210,7 +211,7 @@ export default function HeroSection({ onNavigate }) {
                 <Code2 className="w-5 h-5 mr-2" />
                 View Projects
               </Button>
-              <Button
+              {/* <Button
                 asChild
                 variant="outline"
                 className="rounded-lg px-8 h-12 lg:h-14 text-base lg:text-lg border-primary/50 text-foreground hover:bg-primary/10 font-semibold"
@@ -219,7 +220,7 @@ export default function HeroSection({ onNavigate }) {
                   <FileText className="w-5 h-5 mr-2" />
                   Download Resume
                 </a>
-              </Button>
+              </Button> */}
             </div>
 
             {/* Social Links */}
@@ -248,6 +249,13 @@ export default function HeroSection({ onNavigate }) {
                 aria-label="Send Email"
               >
                 <Mail className="w-5 h-5" />
+              </a>
+               <a
+                href="https://www.youtube.com/@ProgrammingWithAhsan"
+                className="w-12 h-12 flex items-center justify-center rounded-lg border border-primary/30 text-muted-foreground hover:text-primary hover:border-primary hover:bg-primary/10 transition-all"
+                aria-label="Send Email"
+              >
+                <Youtube className="w-5 h-5" />
               </a>
             </div>
           </div>

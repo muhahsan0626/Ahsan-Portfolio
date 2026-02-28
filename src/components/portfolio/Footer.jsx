@@ -1,7 +1,7 @@
 import React from 'react';
-import { Github, Linkedin, Mail, Terminal } from "lucide-react";
+import { Github, Linkedin, Mail, Terminal, Youtube } from "lucide-react";
 
-const navLinks = ["Home", "About", "Projects", "Experience", "Certifications", "Blog", "Contact"];
+const navLinks = ["Home", "Projects", "Experience"];
 
 export default function Footer({ onNavigate }) {
   return (
@@ -11,7 +11,7 @@ export default function Footer({ onNavigate }) {
           {/* Logo/Brand */}
           <div className="flex items-center gap-2">
             <Terminal className="w-4 sm:w-5 h-4 sm:h-5 text-primary" />
-            <span className="font-mono text-base sm:text-lg font-bold">~/portfolio<span className="text-primary">_</span></span>
+            <span className="font-mono text-base sm:text-lg font-bold">MA</span>
           </div>
 
           {/* Navigation Links */}
@@ -51,9 +51,14 @@ export default function Footer({ onNavigate }) {
             >
               <Mail className="w-3.5 sm:w-4 h-3.5 sm:h-4" />
             </a>
+             <a
+              href="https://www.youtube.com/@ProgrammingWithAhsan"
+              className="w-9 sm:w-10 h-9 sm:h-10 flex items-center justify-center rounded-lg border border-primary/30 text-muted-foreground hover:text-primary hover:border-primary hover:bg-primary/10 transition-all"
+            >
+              <Youtube className="w-3.5 sm:w-4 h-3.5 sm:h-4" />
+            </a>
           </div>
         </div>
-
         {/* <div className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-primary/20">
           <p className="text-center text-xs sm:text-sm text-muted-foreground font-mono">
             <span className="text-primary">{'>'}</span> <span className="hidden sm:inline">Built with React + Tailwind CSS</span>

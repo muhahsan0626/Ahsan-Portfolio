@@ -72,9 +72,9 @@ export default function Home() {
         <HeroSection onNavigate={scrollToSection} />
         <ProjectsSection />
         <ExperienceSection />
-        <CertificationsSection />
-        <AchievementsSection />
-        <BlogSection />
+        {/* <CertificationsSection /> */}
+        {/* <AchievementsSection /> */}
+        {/* <BlogSection /> */}
         <ContactSection />
         <Footer onNavigate={scrollToSection} />
       </div>
